@@ -1,0 +1,153 @@
+*{
+    margin: 0px;
+    padding:0px;
+}
+
+/*      Simple Menu Start       */
+
+.menu1{
+    background-color: aqua;
+}
+.menu1 ul{
+    text-align: center;
+}
+.menu1 ul li{
+    display: inline-block;
+    border-left: 1px solid white;
+    margin-left: -5px;
+}
+.menu1 ul li a{
+    color: white;
+    padding:10px 25px;
+    display: inline-block;
+    text-decoration: none;
+    font-size:17px;
+
+}
+.menu1 ul li a:hover{
+    background-color: yellowgreen;
+    transition: .5s;
+}
+
+.menu1 ul li:last-child{
+    border-right: 1px solid white;
+}
+
+/*      Simple Menu End      */
+
+
+
+
+
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+
+
+
+/*      Simple DropDown Menu Start       */
+
+.menu2{
+    background-color: aqua;
+}
+.menu2 ul{
+    text-align: right;
+}
+.menu2 ul li{
+    display: inline-block;
+    border-left: 1px solid white;
+    margin-left: -5px;
+    position: relative;
+}
+.menu2 ul li a{
+    color: white;
+    padding:10px 25px;
+    display: inline-block;
+    text-decoration: none;
+    font-size:17px;
+
+}
+.menu2 ul li:last-child{
+    border-right: 1px solid white;
+}
+.menu2 ul li:hover > a{
+    background-color: yellowgreen;
+}
+
+/* DropDown*/
+
+.menu2 ul li ul{
+    position: absolute;
+    left: 0;
+    top: 105%;
+    width: 200px;
+    text-align: center;
+    background-color: aqua;
+    transition: 1s;
+}
+.menu2 ul ul li:last-child{
+    border-right: none;
+}
+.menu2 ul li ul li{
+    display: block;
+    border-left: none;
+    margin-left: 0;
+    border-bottom: 1px solid white;
+}
+.menu2 ul li ul li a{
+    display: block;
+}
+
+
+/* Hover Part */
+.menu2 ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: top center;
+}
+.menu2 ul li:hover ul{
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+/*----------------------------------------*/
+/*----------------------------------------*/
+/*----------------------------------------*/
+
+/*      Simple DropDown Menu End      */
+
+
+
+/*---------------------------------------*/
+/*     Social Icon Menu Start    */
+
+.social-icon{
+    margin-top: 100px;
+
+}
+.social-icon ul{
+    text-align: right;
+}
+.social-icon ul li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+
+}
+.social-icon ul li a{
+    display: inline-block;
+    height:50px;
+    width: 50px;
+    font-size:20px;
+    background-color: rgb(255, 115, 0);
+    line-height: 50px;
+    color:#ffffff;
+    border-radius: 50%;
+}
+.social-icon ul li a:hover{
+    background-color: mediumspringgreen;
+}
+
+/*     Social Icon Menu End   */
